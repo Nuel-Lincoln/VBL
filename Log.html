@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                    <meta charset="UTF-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Virtual Biology Lessons</title>
+                    <link rel="stylesheet" href="Log.css">
+</head>
+<body>
+                    <div class="MainContainer">
+                                        <div class="Name">
+                                                            VIRTUAL BIOLOGY INSTRUCTION
+                                        </div>
+                                        <div class="Error" id="Error">
+                                        
+                                        </div>
+                                        <div class="Inputs">
+                                                            <p>
+                                                                                <!-- <label for="Username">USERNAME</label> -->
+                                                                                <input type="text" placeholder="Username" name="" id="Username">
+
+                                                            </p>
+                                                            
+                                                            <p>
+                                                                                <!-- <label for="Password">PASSWORD</label> -->
+                                                                                <input type="text" placeholder="Password" name="" id="Password">
+                                                            </p>
+                                                            
+                                                            <div class="Info">
+                                                                                Students can log in with, 
+                                                                                <p>Username : Admin</p>
+                                                                                <p>Password: Admin</p>
+                                                            </div>
+                                                            <div class="Buttons">
+                                                                                <button class="Btn" id="Home">Back to the home page</button>
+                                                                                <button class="Btn" id="LogIn">Proceed to Lessons</button>
+                                                            </div>
+                                        </div>
+                    </div>
+                    <script>
+                                        const Home = document.getElementById("Home");
+                                        const Log  = document.getElementById("LogIn");
+
+
+
+                                        Home.addEventListener("click", ()=>{
+                                                            window.location.href= "/VBL/Index.html";
+                                        })
+
+                                        Log.addEventListener("click", ()=>{
+                                                            const Username = document.getElementById("Username").value;
+                                                            const Password = document.getElementById("Password").value;
+                                                            const Error = document.getElementById("Error");
+
+
+                                                            if(Username && Password){
+                                                                                if(Username == "Admin" && Password=="Admin"){
+                                                                                                    localStorage.setItem("VBLLOGGED", "Admin");
+                                                                                                    window.location.href = "/VBL/Lessons.html";
+                                                                                }else{
+                                                                                                    localStorage.setItem("VBLLOGGED", `${Username}`);
+                                                                                                    window.location.href = "/VBL/Lessons.html";
+                                                                                }
+                                                            }else{
+                                                                                Error.innerHTML= "Username and Password cannot be empty";
+                                                            }
+                                        })
+                    </script>
+</body>
+</html>

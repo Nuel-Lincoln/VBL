@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                    <meta charset="UTF-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Lessons</title>
+                    <link rel="stylesheet" href="D2.css">
+                    <script>
+                                        window.addEventListener("load", ()=>{
+                                                            const User = localStorage.getItem("VBLLOGGED");
+                                                            if(User == "Admin"){
+                                                                                document.getElementById("LoggedUser").innerHTML = "Admin Tony Uzoigwe";
+                                                            }else if(User == null){
+                                                                                window.location.href = "/VBL/Index.html"
+                                                            } else if(User != null && User != "Admin" ){
+                                                                                document.getElementById("UserImg").src = " ";
+                                                                                document.getElementById("UserImg").alt = `${User}`;
+                                                                                document.getElementById("LoggedUser").innerHTML = `User  ${User}`;
+                                                            }
+                                        })
+                    </script>
+</head>
+<body>
+                   <div class="MainContainer">
+                    <div class="SideBar">
+                                        <div class="SideFirst">
+                                                            <div class="One">
+                                                                                VBI
+                                                            </div>
+                                                            <div class="Two">
+                                                                                Virtual Biology Instruction
+                                                            </div>
+                                                            <div class="Three">
+                                                                                <<
+                                                            </div>
+                                        </div>
+                                        <div class="SideSecond">
+                                                            <input type="text" id="Search" placeholder="🔍 Search " >
+
+                                                            <a href="/VBL/Index.html" alt="Home" class="Home"> 🏠  Home </a>
+                                        
+                                                            <a class="Introduction" href="/VBL/Lessons.html">
+                                                                              🚟  Introduction
+                                                            </a>
+                                                            <div class="Digestive">
+                                                                                <div class="DigestiveDropDown" id="DigestiveDropDown">✨ Digestive System  ⏬</div>
+                                                                                <div class="SubDigestive" id="SubDigestive">
+                                                                                                    <ul >
+                                                                                                                        <li><a href="/VBL/D0.html" class="D0">Introduction</a></li>
+                                                                                                                        <li><a href="/VBL/D1.html" class="D1">Meaning of Digestive system </a></li>
+                                                                                                                        <li><a href="/VBL/D2.html" class="D2">Parts and types of alimentary tracts</a></li>
+                                                                                                                        <li><a href="/VBL/D3.html" class="D3">Modifications and mechanisms of feeding</a></li>
+                                                                                                                        <li><a href="/VBL/D4.html" class="D4">Feeding habits</a></li>
+                                                                                                    </ul>
+                                                                                </div>
+                                                            </div>
+                                                            <div class="Respiratory">
+                                                                                <div id="RespiratoryDropDown">✨ Respiratory System   ⏬</div> 
+                                                                                <div class="SubRespiratory" id="SubRespiratory">
+                                                                                                    <ul>
+                                                                                                                        <li><a href="/VBL/R1.html" class="R1">Introduction</a></li>
+                                                                                                                        <li><a href="/VBL/R2.html" class="R2">Phases of respiration</a></li>
+                                                                                                                        <li><a href="/VBL/R5.html"class="R5">Conditions necessary for respiration</a></li>
+                                                                                                                        <li><a href="/VBL/R3.html" class="R3">Types of respiratory systems</a></li>
+                                                                                                                        <li><a href="/VBL/R6.html" class="R6">Characteristics of respiratory systems</a></li>
+                                                                                                                        <li><a href="/VBL/R4.html" class="R4">Mechanism of respiration in different organisms</a></li>
+                                                                                                    </ul>
+                                                                                </div>
+                                                            </div>
+                                                            <div class="Files">
+                                                                                📂 Files
+                                                            </div>
+                                                            <a href="/VBL/About.html" class="About">
+                                                                                About VBI
+                                                            </a>
+                                        </div>
+                                        <div class="SideThird">
+                                                            <div class="User">
+                                                                                <img src="./Tonyy.JPG" id="UserImg" alt="" >
+                                                                                <div id="LoggedUser"></div>
+                                                            </div>
+                                                            <div class="Btn" id="LogOut">Log Out</div>
+                                        </div>
+                    </div>
+                                        <div class="MainView">
+                                                                                                    <div class="Video">
+                                                                                                                        <video controls>
+                                                                                                                                            <source src="./Alimentary canal.mp4" type="video/mp4">
+                                                                                                                        </video>
+                                                                                                    </div>
+                                                                                                    <div class="Text">
+                                                                                                                        <h2>Parts and types of alimentary tracts</h3>
+                                                                                                                                            <div>
+                                                                                                                                                                The alimentary tracts are organs that food and liquids travel through when they are swallowed, digested, absorbed, and leave the body as feces. These organs include the mouth, pharynx (throat), esophagus, stomach, small intestine, large intestine, rectum, and anus. The alimentary tract is part of the digestive system. 
+                                                                                                                                            </div>
+                                                                                                                                                                <h3>
+                                                                                                                                                                                    The types of alimentary tracts of some animals:
+                                                                                                                                                                </h3>
+                                                                                                                                                                <span>       
+                                                                                                                                                                                    Different animals possess varying alimentary tracts which enables them to absorb digested food. Animal such as planaria, earthworm, birds and even man have structures that enables them to absorb digested foods.
+                                                                                                                                                                </span>
+                                                                                                                                                                <p>
+                                                                                                                                                                                    <strong>Planaria:</strong> 
+                                                                                                                                                                                    The planaria is a free-living flatworm that feeds on aquatic animals called zooplanktons. It has a mouth that leads to a buccal cavity and the pharynx or throat. Food particles are sucked in by the pharynx's pumping activity as they go through the pharynx and into the small intestine. Three branches make up the small intestine, with one going to the head and the other two going to the tail. Numerous side branches sprout from the branches. Planaria digest intracellularly. All areas of the body may digest food thanks to the branching gut. Food that hasn't been digested is ejected from the mouth.
+
+                                                                                                                                                                </p>
+                                                                                                                                                                <p>
+                                                                                                                                                                                    <strong>
+                                                                                                                                                                                                        Tapeworm:
+                                                                                                                                                                                    </strong>
+                                                                                                                                                                                    The tapeworm is found in the intestine of some mammals as endoparasites. It has no alimentary canal as it feeds on digested food of the host. It absorbs the digested food from the host by simple diffusion.
+                                                                                                                                                                </p>  
+                                                                                                                                                                <p>
+                                                                                                                                                                                    <strong>Earthworm</strong>
+                                                                                                                                                                                    Earthworms have a tube-like alimentary tract with two openings- a mouth through which food enters and the anus through which undigested food leaves the body. The alimentary canal of the earthworm includes mouth, pharynx, esophagus, crop, gizzard, intestine, caecum, rectum and anus.
+                                                                                                                                                                </p> 
+                                                                                                                                                                <p>
+                                                                                                                                                                                    <strong>Birds</strong>
+                                                                                                                                                                                    The digestive system of bird is made up of the beak, mouth, pharynx, esophagus, crop, proventriculus, gizzard, intestine, caecum, rectum and anus. Birds uses their beak to pick fruits, grains etc because they don’t have teeth. The food then moves from the mouth through the oesophagus to the crop. The food is stored temporarily in the crop where it is moistened and fermented by various bacteria. From the crop, the food passes to the proventriculus where digestive enzymes such as pepsin and amylase are secreted on the food. From the proventriculus, the food moves to the gizzard where the it is grinded. The gizzard is also called the grindular stomach and it grinds the food with the aid of secreted acids. From gizzard, the food moves to the duodenum and intestine where further digestion and absorption of food takes place. The undigested food are moved through the caeca to the rectum and finally to the anus (cloaca) where the faeces and urine are removed from the body at the same time
+                                                                                                                                                                </p>  
+                                                                                                                                                                <p>
+                                                                                                                                                                                    <strong>
+                                                                                                                                                                                                        Alimentary canal and digestion of food for man
+                                                                                                                                                                                    </strong>
+                                                                                                                                                                                    The alimentary canal of man consists of the mouth, oesophagus, stomach, duodenum, small intestine or ileum, caecum, appendix, large intestine or colon, rectum and anus.
+                                                                                                                                                                                    <div>
+                                                                                                                                                                                                        Mouth: The alimentary canal of man starts from the mouth. The mouth contains the teeth, salivary gland and tongue. The teeth is used to cut, grind or chew food into tiny particles. The tongue rolls the food in bolus, help in food movement in the mouth, allows mixing of food with saliva or ptyalin and aids in swallowing of food into the gullet or oesophagus. The salivary gland in the other hand secretes saliva which is made up of useful enzymes known as ptyalin. The enzyme (ptyalin) breaks down starch into maltose which later swallowed into the gullet in forms of bolus. This allows swallowing of food in the mouth for swallowing and it also serves as solvent for the food. Saliva is alkaline in nature.
+                                                                                                                                                                                    </div>
+                                                                                                                                                                                    <div>
+                                                                                                                                                                                                        Oesophagus or gullet: The oesophagus connects the mouth to the stomach. The food swallowed is passed down through the oesophagus by a peristaltic movement into the stomach.
+                                                                                                                                                                                    </div>
+                                                                                                                                                                                    <div>
+                                                                                                                                                                                                        Stomach: The stores food temporarily for some hours and it is released at by intervals by the opening of the pylotic sphinter. In the stomach, the gastric gland secretes juice which contains the enzymes- renin and pepsin.
+                                                                                                                                                                                                        <ul>
+                                                                                                                                                                                                                            <li>Renin: This enzyme acts on milk </li>
+                                                                                                                                                                                                                            <li>Pepsin: breaks down protein to peptones</li>
+                                                                                                                                                                                                                            <li>Gastric gland: this secretes hydrochloric acid (Hcl) which creates an acid medium for two enzymes to act. The Hcl kills bacterial in the stomach</li>
+                                                                                                                                                                                                        </ul>
+                                                                                                                                                                                                        The Hcl kills bacterial in the stomach through muscular movement known as churning movement, the food is mixed with digestive juice. The churning movement converts the food into a semi-liquid state called chyme.
+                                                                                                                                                                                    </div>
+                                                                                                                                                                                    <div>
+                                                                                                                                                                                                        Duodenum: Digestion of food also takes place in the duodenum. It contains pancreas which secretes pancreatic juice that contains three enzymes- Amylase, Lipase and Trypsin.
+                                                                                                                                                                                                        <ul>
+                                                                                                                                                                                                                            <li>Amylase: this converts starch to maltose</li>
+                                                                                                                                                                                                                            <li>Lipase: Lipase converts fats and oil to fatty acids and glycerol</li>
+                                                                                                                                                                                                                            <li>Trypsin: It converts protein and peptones to polypeptides.</li>
+                                                                                                                                                                                                        </ul>
+                                                                                                                                                                                                        Alkaline liquid known as the bile helps in the digestion of fats and oil. The bile is secreted in the liver and stored in the gall bladder. The bile helps in the emulsification of fats. At the end of digestion in the duodenum the food now in liquid form called chyle passed to the ileum or small intestine.
+                                                                                                                                                                                    </div>
+                                                                                                                                                                                    <div>
+                                                                                                                                                                                                        Small Intestine: The small intestine or ileum is found between the duodenum and the large intestine. Digestion and absorption of food takes place in the small intestine.
+                                                                                                                                                                                                        <ul>
+                                                                                                                                                                                                                            <li>Digestion of food: digestion of food also takes place in the small intestine. The small intestine wall secretes enzymes such as lipase, erepsin, maltase, sucrase and lactase. </li>
+                                                                                                                                                                                                                            <li>Absorption of food: digested food is absorbed in the small intestine by a tiny finger-like structure called villi.</li>
+                                                                                                                                                                                                        </ul>
+                                                                                                                                                                                    </div>
+                                                                                                                                                                                    <div>
+                                                                                                                                                                                                        Caecum and Appendix: The function of the appendix is not well known but it contains bacteria that helps in minor digestion of cellulose.
+                                                                                                                                                                                    </div>
+                                                                                                                                                                                    <div>
+                                                                                                                                                                                                        Large intestine: The undigested food passes into the colon or large intestine. Water is also absorbed and the waste is concentrated into faeces. Feaces is passed into the rectum and finally out of the body through the anus.
+                                                                                                                                                                                    </div>
+                                                                                                                                                                                    <h4>SIMILARITIES IN THE ALIMENTARY CANAL OF A BIRD AND HUMAN</h4>
+                                                                                                                                                                                    <div>
+                                                                                                                                                                                                        They both have mouth; oesophagus/gullet; stomach; duodenum; small intestine; large intestine; caecum; rectum.
+                                                                                                                                                                                    </div>
+                                                                                                                                                                                    <div>
+                                                                                                                                                                                                        The structural difference between the alimentary canal of a bird and man is shown in the table below;
+                                                                                                                                                                                    </div>
+                                                                                                                                                                                    <table>
+                                                                                                                                                                                                        <tr>
+                                                                                                                                                                                                                            <th>Birds</th>
+                                                                                                                                                                                                                            <th>Humans</th>
+                                                                                                                                                                                                        </tr>
+                                                                                                                                                                                                        <tr>
+                                                                                                                                                                                                                            <td>Teeth absent</td>
+                                                                                                                                                                                                                            <td>Teeth present</td>
+                                                                                                                                                                                                        </tr>
+                                                                                                                                                                                                        <tr>
+                                                                                                                                                                                                                            <td>Beak present</td>
+                                                                                                                                                                                                                            <td>Mouth present, no beak</td>
+                                                                                                                                                                                                        </tr>
+                                                                                                                                                                                                        <tr>
+                                                                                                                                                                                                                            <td>Crop present</td>
+                                                                                                                                                                                                                             <td>Crop absent</td>
+                                                                                                                                                                                                        </tr>
+                                                                                                                                                                                                        <tr>
+                                                                                                                                                                                                                            <td>Gizzard present</td>
+                                                                                                                                                                                                                            <td>Gizzard absent</td>
+                                                                                                                                                                                                        </tr>
+                                                                                                                                                                                                        <tr>
+                                                                                                                                                                                                                            <td>Cloaca present</td>
+                                                                                                                                                                                                                            <td>Anus present</td>
+                                                                                                                                                                                                        </tr>
+                                                                                                                                                                                                        <tr>
+                                                                                                                                                                                                                            <td>Shorter alimentary canal </td>
+                                                                                                                                                                                                                            <td>Longer alimentary canal </td>
+                                                                                                                                                                                                        </tr>
+                                                                                                                                                                                                        <tr>
+                                                                                                                                                                                                                            <td>Appendix absent</td>
+                                                                                                                                                                                                                            <td>Appendix Present </td>
+                                                                                                                                                                                                        </tr>
+                                                                                                                                                                                    </table>
+                                                                                                                                                                </p>                                                                                                                                      
+                                                                                                                                            <p></p>
+                                                                                                                        <div class="Buttons">
+                                                                                                                                            <div class="Btn1" id="Back"><< Back </div>
+                                                                                                                                            <div class="Btn1" id="Next">Next >></div>
+                                                                                                                        </div>
+                                                                                                    </div>                                                            
+                                        </div>
+                   </div>
+                   <script src="./Index.js"></script>
+                   <script>
+                    const Back = document.getElementById("Back");
+                    const Next = document.getElementById("Next");
+
+                    Back.addEventListener("click", ()=>{
+                                        window.location.href = "/VBL/D1.html"              
+                          })
+
+                    Next.addEventListener("click", ()=>{
+                                        window.location.href = "/VBL/D3.html" 
+                    })
+                   </script>
+</body>
+</html>

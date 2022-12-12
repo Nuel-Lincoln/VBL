@@ -1,0 +1,299 @@
+body{
+                    margin:0;
+                    background-image: linear-gradient(to bottom right , white, rgb(135, 135, 179), white );
+                    /* font-family: Helvetica; */
+}
+.MainContainer{
+                    width:fit-content;
+                    height: fit-content;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    /* align-items: center;
+                    justify-content: center; */
+}
+
+.SideBar{
+                    width:20%;
+                    background-image: linear-gradient(to bottom right , rgb(189, 179, 179), rgb(44, 38, 38), rgb(97, 26, 26) );
+                   min-height: 99vh;
+                    color:white;
+                    display:flex;
+                    flex-direction: column;
+                    align-items:center;
+                    padding:1%;
+                   justify-content: space-between;
+}
+
+.SideBar>div{
+                    width:90%;
+                    min-height: 2em;
+}
+
+.SideFirst{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content:space-between;
+                    align-items:center;
+                    font-weight: 900;
+}
+
+.SideFirst .One{
+                    background-color:rgb(31, 74, 166);
+                    font-weight: 900;
+                    border-radius: .3em;
+                    padding: 1%;
+                    font-size: 80%;
+}
+
+.SideFirst .Two{
+                    color:rgb(225, 32, 135);
+                    font-size: 100%;
+}
+.SideSecond{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content:space-evenly;
+                    align-items:flex-start;
+                    gap:1em;
+                    font-weight: 700;
+                    color:gainsboro;
+}
+
+.SideSecond>div{
+                    border: 1px solid rgb(103, 98, 98);
+                    border-radius: .5em;
+                    padding: 2%;
+                    width: 90%;
+                    cursor: pointer;
+}
+
+.SideSecond a{
+                    text-decoration: none;
+                    color: gainsboro;
+                    padding:2%;
+                    border: 1px solid rgb(103, 98, 98);
+                    border-radius: .5em;
+                    padding: 2%;
+                    width: 90%;
+                    cursor: pointer;
+}
+
+.SideSecond a:active{
+                    background-image: linear-gradient(to bottom right , gray, rgb(135, 135, 179), gray );
+}
+.SideSecond a:hover{
+                    background-image: linear-gradient(to bottom right , gray, rgb(135, 135, 179), gray );
+}
+
+.SideSecond div:hover{
+                    background-image: linear-gradient(to bottom right , gray, rgb(135, 135, 179), gray );
+}
+
+.SideSecond ul{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content:space-around;
+                    width: 100%;
+                    height:fit-content;
+                    gap: 2%;
+                    
+}
+.SideSecond input{
+                    background: transparent;
+                    outline:none;
+                    border: 1px solid gray;
+                    width:90%;
+                    border-radius: .5em;
+                    padding: 2%;
+                    color:white;
+                    font-size: 120%;
+}
+.SideThird{
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding: 2%;
+                    gap:2em;
+}
+
+.Btn{
+                    padding: 5%;
+                    border:1px solid gainsboro;
+                    font-weight: 600;
+                    border-radius: .5em;
+                    text-align:center;
+                    background-image: linear-gradient(to bottom right , blue, rgb(135, 135, 179), blue );
+                    cursor: pointer;
+}
+.User{
+                    width:90%;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    /* border:1px solid gray; */
+                    padding:5%;
+                    gap:1em;
+}
+.Buttons{
+                    width:100%;
+                    display:flex;
+                    justify-content:space-between;
+                    margin-top: 2em;
+}
+.Buttons a{
+                    text-decoration: none;
+}
+.Btn1{
+                    padding: 1%;
+                    border:1px solid gainsboro;
+                    font-weight: 600;
+                    border-radius: .5em;
+                    text-align:center;
+                    background-image: linear-gradient(to bottom right , white, rgb(135, 135, 179), white );
+                    cursor: pointer;
+                    font-size: 80%;
+                    color:black;
+}
+
+.User> div{
+                    margin-top:5%;
+                    margin-right: 1%;
+}
+.SideThird img{
+                    width: 15%;
+                    border-radius: 20%;
+                    border: 1px solid gainsboro;
+                    padding: 2%;
+                    overflow-x: hidden;
+                    font-family: "popins";
+}
+
+.ThankYou{
+                    width:80%;
+                    color: blue;
+                    font-size: 500%;
+                    text-align:center;
+ }
+
+.MainView{
+                    width:73%;
+                    display:flex;
+                    flex-direction: column;
+                    height: fit-content;
+                    /* min-height:fit-content; */
+                    height: fit-content;
+                    padding:2%;
+                    align-items: center;
+                    /* color: black; */
+                    justify-content: center;
+                    /* background-color:aquamarine */
+}
+
+
+.MainView h4{
+                    margin-left: 2em;
+                    color:blue;
+                    font-size: 120%;
+
+}
+ .Video video{
+                  width:55%;
+ }
+.Body{
+                    width:100%;
+                    display:flex;
+                    flex-direction: column;
+                    align-items: center;
+                    /* background-color: black; */
+}
+ .Pictures{
+                    display:flex;
+                    flex-direction: column;
+                    width: 96%;
+                    align-content: center;
+                    justify-content: center;
+                    height: fit-content;
+                    /* background-color: chartreuse; */
+                    gap: 1em;
+                    /* align-self: center; */
+ }
+ .Pictures>div{
+                    width: 90%;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    height: 40%;
+                    align-items: center;
+                    justify-content: center;
+                    margin-left:3em ;
+                    /* gap: 1em; */
+ }
+
+ .Pictures img{
+                    width: 50%;
+                    height: 20em;
+ }
+ .Text{
+                    padding: 2%;
+                    font-weight: 700;
+                    text-align: justify;
+                    align-content: flex-start;
+                    width: 96%;
+                    justify-content: flex-start;
+                    color:rgb(87, 78, 53);
+                    font-family: Georgia;
+                    font-size: 100%;
+                   
+ }
+.DigestiveDropDown, .RespiratoryDropDown{
+                    padding: 2%;
+                    /* background-color: bisque; */
+}
+ .SubDigestive{
+                    display:flex;
+                    flex-direction: column;
+ }
+ .SubRespiratory{
+                    display: none;
+                    width: 100%;
+                    height: fit-content;
+ }
+ .Digestive, .Respiratory{
+                    width:100%;
+ }
+
+ .SubDigestive ul, .SubRespiratory ul{
+                    width:90%;
+ }
+ .SubDigestive li, .SubRespiratory li{
+                    margin-top: 5%;
+                    width: 100%;
+                    padding: 5%;
+ }
+
+ .SubDigestive a, .SubRespiratory a{
+                    border: none;
+ }
+
+ .D3{
+                    background-image: linear-gradient(to bottom right , gray, rgb(135, 135, 179), gray );
+                    
+ }
+
+ .Video, .Text{
+                    width: 100%;
+                    height: 45%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items:center;
+ }
+ .Video video{
+                    width: 90%;
+                    height: 100%;
+                    border-radius: 2em;
+ }
+ /* .Introduction{
+                    background-image: linear-gradient(to bottom right , gray, rgb(135, 135, 179), gray );
+} */

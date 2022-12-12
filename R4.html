@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                    <meta charset="UTF-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Lessons</title>
+                    <link rel="stylesheet" href="R4.css">
+                    <script>
+                                        window.addEventListener("load", ()=>{
+                                                            const User = localStorage.getItem("VBLLOGGED");
+                                                            console.log(User)
+                                                            if(User == "Admin"){
+                                                                                document.getElementById("LoggedUser").innerHTML = "Admin Tony Uzoigwe";
+                                                            }else if(User == null){
+                                                                                window.location.href = "/VBL/Index.html"
+                                                            } else if(User != null && User != "Admin" ){
+                                                                                document.getElementById("UserImg").src = " ";
+                                                                                document.getElementById("UserImg").alt = `${User}`;
+                                                                                document.getElementById("LoggedUser").innerHTML = `User  ${User}`;
+                                                            }
+                                        })
+                    </script>
+</head>
+<body>
+                   <div class="MainContainer">
+                    <div class="SideBar">
+                                        <div class="SideFirst">
+                                                            <div class="One">
+                                                                                VBI
+                                                            </div>
+                                                            <div class="Two">
+                                                                                Virtual Biology Instruction
+                                                            </div>
+                                                            <div class="Three">
+                                                                                <<
+                                                            </div>
+                                        </div>
+                                        <div class="SideSecond">
+                                                            <input type="text" id="Search" placeholder="🔍 Search " >
+
+                                                            <a href="/VBL/Index.html" alt="Home" class="Home"> 🏠  Home </a>
+                                        
+                                                            <a class="Introduction" href="/VBL/Lessons.html">
+                                                                              🚟  Introduction
+                                                            </a>
+                                                            <div class="Digestive">
+                                                                                <div class="DigestiveDropDown" id="DigestiveDropDown">✨ Digestive System  ⏬</div>
+                                                                                <div class="SubDigestive" id="SubDigestive">
+                                                                                                    <ul >
+                                                                                                                        <li><a href="/VBL/D0.html" class="D0">Introduction</a></li>
+                                                                                                                        <li><a href="/VBL/D1.html" class="D1">Meaning of Digestive system </a></li>
+                                                                                                                        <li><a href="/VBL/D2.html" class="D2">Parts and types of alimentary tracts</a></li>
+                                                                                                                        <li><a href="/VBL/D3.html" class="D3">Modifications and mechanisms of feeding</a></li>
+                                                                                                                        <li><a href="/VBL/D4.html" class="D4">Feeding habits</a></li>
+                                                                                                    </ul>
+                                                                                </div>
+                                                            </div>
+                                                            <div class="Respiratory">
+                                                                                <div id="RespiratoryDropDown">✨ Respiratory System   ⏬</div> 
+                                                                                <div class="SubRespiratory" id="SubRespiratory">
+                                                                                                    <ul>
+                                                                                                                        <li><a href="/VBL/R1.html" class="R1">Introduction</a></li>
+                                                                                                                        <li><a href="/VBL/R2.html" class="R2">Phases of respiration</a></li>
+                                                                                                                        <li><a href="/VBL/R5.html"class="R5">Conditions necessary for respiration</a></li>
+                                                                                                                        <li><a href="/VBL/R3.html" class="R3">Types of respiratory systems</a></li>
+                                                                                                                        <li><a href="/VBL/R6.html" class="R6">Characteristics of respiratory systems</a></li>
+                                                                                                                        <li><a href="/VBL/R4.html" class="R4">Mechanism of respiration in different organisms</a></li>
+                                                                                                    </ul>
+                                                                                </div>
+                                                            </div>
+                                                            <div class="Files">
+                                                                                📂 Files
+                                                            </div>
+                                                            <a href="/VBL/About.html" class="About">
+                                                                                About VBI
+                                                            </a>
+                                        </div>
+                                        <div class="SideThird">
+                                                            <div class="User">
+                                                                                <img src="./Tonyy.JPG" id="UserImg" alt="" >
+                                                                                <div id="LoggedUser"></div>
+                                                            </div>
+                                                            <div class="Btn" id="LogOut">Log Out</div>
+                                        </div>
+                    </div>
+                                        <div class="MainView">
+                                                                                                    
+                                                                                                    <div class="Video">
+                                                                                                                        <video controls>
+                                                                                                                                            <source src="./Respiration and organs of respiration in plants.mp4" type="video/mp4">
+                                                                                                                        </video>
+                                                                                                    </div>
+                                                                                                    <div class="Text">
+                                                                                                                        <h2>Mechanism of respiration in different organisms</h3>
+                                                                                                                        <div>
+                                                                                                                                            There are no special respiratory organs in unicellular and aquatic organisms as seen in the VBI. Amoeba and paramecium respire through the body surface through simple diffusion
+                                                                                                                        </div>
+                                                                                                                                            <h3>
+                                                                                                                                                                Respiration in Amoeba
+                                                                                                                                            </h3>
+                                                                                                                                            <span>       
+                                                                                                                                                                We know that amoeba is a unicellular organism which lives in fresh water. This organism does not have a specialized organ to do the process of respiration. So, in amoeba respiration takes place through its cell membrane also called plasma membrane. Amoeba gets oxygen gas dissolved in surrounding water through its plasma membrane by the process of diffusion. The oxygen gas diffused inside the body is used up by amoeba. In the body the oxygen gas absorbed is used to break down the complex food material into simple molecules. During these metabolic reactions in the body of amoeba the oxygen gas is converted into carbon dioxide gas. The carbon dioxide gas is also liberated in the surrounding water through the same process of diffusion.
+                                                                                                                                            </span>
+                                                                                                                        
+                                                                                                                                           <h3>
+                                                                                                                                                                Respiration in insects
+                                                                                                                                           </h3>
+                                                                                                                                           <span>
+                                                                                                                                           
+                                                                                                                                            Insects generally use the trachea system for gaseous exchange. The insects as seen in the VBI have tiny openings in their abdomen called spiracles through which oxygen diffuses out. The spiracles lead into certain tubes called tracheae. These tracheae further divide into smaller tubes called tracheoles and these tiny tubes gets into the tissues and cells through the body fluid. Insects such as cockroach, grasshopper etc. use the tracheal system. The insects perform breathing movements by compressing its dorso-ventrally (i.e., inwards from both sides along its entire body) and then relaxes it. These processes allow the exchange of oxygen in insects.
+                                                                                                                                            
+                                                                                                                                           </span>
+
+                                                                                                                                           <h3>
+                                                                                                                                                                Respiration in toad
+                                                                                                                                           </h3>
+                                                                                                                                           <span>
+                                                                                                                                            The young toad (Tadpole) uses gills for gases exchange. At tadpole stage, the animal developed an external gill through which direct diffusion of gases takes place between the animal that is the tadpole and the respiratory medium which is the water. Oxygen dissolved in water can easily diffuse into the body and carbon dioxide can also easily diffused out of the body by simple diffusion. This is made possible because the ratio of body surface to volume is very large. In the next tadpole stage, the external gills disappear and internal gills developed under operculum or spout.  In this stage, the tadpole breaths in a manner similar to that of fish.
+                                                                                                                                            Adult tadpole uses three different respiratory organs or system for gaseous exchange. The organs are the mouth, skin and lungs.
+                                                                                                                                           </span>
+                                                                                                                                           <h3>
+                                                                                                                                                                Difference skin respiration and lung respiration       
+                                                                                                                                           </h3>
+                                                                                                                                           <span>
+                                                                                                                                                                 Lung respiration requires lung while skin respiration is carried out by the surface of the skin.
+                                                                                                                                            </span>
+                                                                                                                                            <h3>
+                                                                                                                                                                MECHANISM OF RESPIRATION IN MAN:
+                                                                                                                                            </h3>
+                                                                                                                                            <span>
+                                                                                                                                                                The mechanism of breathing in man involves two phases or stages as seen in the VBI, these are external and internal or tissue respiration.
+                                                                                                                                                                External respiration or breathing is defined as the exchange of gases between the environment and the respiratory organs of the living organisms. External respiration involves inspiration or inhalation and expiration or exhalation. Inspiration is the breathing in of oxygen while exhalation is the breathing out of carbon dioxide.
+                                                                                                                                                                Process of inspiration in man:
+                                                                                                                                                                The following processes are involved during inspiration in man;
+                                                                                                                                                                <ul>
+                                                                                                                                                                                    <li>The thoracic cavity first increases in volume.</li>
+                                                                                                                                                                	<li>The diaphragm contrasts and becomes flattened</li>
+                                                                                                                                                                                    <li>The intercostals muscles contrast</li>
+                                                                                                                                                                                    <li>The sternum is moved forwards</li>
+                                                                                                                                                                                    <li>The ribs are moved upwards and outwards</li>
+                                                                                                                                                                                    <li> is an increase in the volume and a decrease or fall in the pressure of thoracic cavity </li>
+                                                                                                                                                                                    <li>Consequently, air from outside is drawn into the lungs or alveoli through the nose, trachea, bronchus and bronchiole leading to an increase in the size of the lungs.</li>
+                                                                                                                                                                </ul>
+                                                                                                                                                                <div>  NOTE: Inspiration is followed by gaseous exchange.</div> 
+                                                                                                                                                                <div>Process of expiration or exhalation in man:</div>
+                                                                                                                                                                <div>The following processes are involved during expiration or exhalation in man:</div>
+                                                                                                                                                                                    <ul>
+                                                                                                                                                                                                        <li>The thoracic cavity first decreases in volume.</li>
+                                                                                                                                                                                                        <li>The diaphragm relaxes and assumes its dome-shape.</li>
+                                                                                                                                                                                                        <li>The intercostals muscles relax.</li>	
+                                                                                                                                                                                                        <li>The sternum now moves inwards.</li>	
+                                                                                                                                                                                                        <li>The ribs are moved downwards and inwards</li>
+                                                                                                                                                                                                        <li>There is decrease in the volume and an increase in the pressure of the thoracic cavity.</li>	
+                                                                                                                                                                                                        <li>Consequently, air containing waste products like carbon dioxide and water vapour from inside the alveoli or lung are forced out through bronchioles, bronchi, trachea, and finally to outside through the nose. This finally leads to decrease in the size of the lung</li>
+                                                                                                                                                                                    </ul>	
+                                                                                                                                                                                    <div>Note: During expiration, the air in the lungs is never completely exhaled or removed. The air left in the lung is called residual air while that which is exchanged in each breathe is called tidal air. The actual composition of inhaled and exhaled air include;</div> Oxygen 21% (inhaled air) 16% (exhaled air)
+                                                                                                                                                                                    <div> Carbon dioxide 0.03%(inhaled air) 4.1% (exhaled air)</div>
+                                                                                                                                                                                    <div> Nitrogen 79% (inhaled air) 79% (exhaled air) </div>
+                                                                                                                                                                                    <div>Water vapour variable (inhaled air) saturated (higher) (exhaled air)</div> 
+                                                                                                                                                                                    <div>The teacher gives the students’ time to copy salient points from the VBI and ensure they are not distracted in the course of the lesson.</div>
+                                                                                                                                            </span>
+                                                                                                                                            <h3>
+                                                                                                                                                                Respiration and organs of respiration in plants.
+                                                                                                                                            </h3>
+                                                                                                                                            <div>
+                                                                                                                                                                Respiration in plants. Respiration in plant is the process by which green plants make use of carbon dioxide and water in the presence of sun light to manufacture food. The process is otherwise known as photosynthesis. Photosynthesis is the opposite of respiration (in animals). The process of respiration in plants involves the use of the stomata and the lenticels by the plant to trap carbon dioxide and water for the manufacturing of food. The process is also known as the building up mechanism.
+                                                                                                                                                                Organs for respiration in plants. The teacher make use of the instructional material (plants) to explain to the students thus:
+                                                                                                                                                                Plants do not have specialized organs used for gaseous exchange. However, gases move in and out of the plants through the stomata and lenticels.
+                                                                                                                                                                Stomata: stomata are very thin opening found in the epidermis of leaves and stem of seedlings.
+                                                                                                                                                                Lenticels: are breathing pores or tiny opening found in older stems.
+                                                                                                                                            </div>
+                                                                                                                                            <p></p>
+                                                                                                                        <div class="Buttons">
+                                                                                                                                            <div class="Btn1" id="Back"><< Back </div>
+                                                                                                                                            <div class="Btn1" id="Next">Next >></div>
+                                                                                                                        </div>
+                                                                                                    </div>                                                            
+                                        </div>
+                   </div>
+                   <script src="./Index.js"></script>
+                   <script>
+                    const Back = document.getElementById("Back");
+                    const Next = document.getElementById("Next");
+
+                    Back.addEventListener("click", ()=>{
+                                        window.location.href = "/VBL/R6.html"              
+                          })
+
+                    Next.addEventListener("click", ()=>{
+                                        window.location.href = "/VBL/ThankYou.html" 
+                    })
+                   </script>
+</body>
+</html>

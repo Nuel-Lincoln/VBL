@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                    <meta charset="UTF-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Lessons</title>
+                    <link rel="stylesheet" href="R3.css">
+                    <script>
+                                        window.addEventListener("load", ()=>{
+                                                            const User = localStorage.getItem("VBLLOGGED");
+                                                            console.log(User)
+                                                            if(User == "Admin"){
+                                                                                document.getElementById("LoggedUser").innerHTML = "Admin Tony Uzoigwe";
+                                                            }else if(User == null){
+                                                                                window.location.href = "/VBL/Index.html"
+                                                            } else if(User != null && User != "Admin" ){
+                                                                                document.getElementById("UserImg").src = " ";
+                                                                                document.getElementById("UserImg").alt = `${User}`;
+                                                                                document.getElementById("LoggedUser").innerHTML = `User  ${User}`;
+                                                            }
+                                        })
+                    </script>
+</head>
+<body>
+                   <div class="MainContainer">
+                    <div class="SideBar">
+                                        <div class="SideFirst">
+                                                            <div class="One">
+                                                                                VBI
+                                                            </div>
+                                                            <div class="Two">
+                                                                                Virtual Biology Instruction
+                                                            </div>
+                                                            <div class="Three">
+                                                                                <<
+                                                            </div>
+                                        </div>
+                                        <div class="SideSecond">
+                                                            <input type="text" id="Search" placeholder="🔍 Search " >
+
+                                                            <a href="/VBL/Index.html" alt="Home" class="Home"> 🏠  Home </a>
+                                        
+                                                            <a class="Introduction" href="/VBL/Lessons.html">
+                                                                              🚟  Introduction
+                                                            </a>
+                                                            <div class="Digestive">
+                                                                                <div class="DigestiveDropDown" id="DigestiveDropDown">✨ Digestive System  ⏬</div>
+                                                                                <div class="SubDigestive" id="SubDigestive">
+                                                                                                    <ul >
+                                                                                                                        <li><a href="/VBL/D0.html" class="D0">Introduction</a></li>
+                                                                                                                        <li><a href="/VBL/D1.html" class="D1">Meaning of Digestive system </a></li>
+                                                                                                                        <li><a href="/VBL/D2.html" class="D2">Parts and types of alimentary tracts</a></li>
+                                                                                                                        <li><a href="/VBL/D3.html" class="D3">Modifications and mechanisms of feeding</a></li>
+                                                                                                                        <li><a href="/VBL/D4.html" class="D4">Feeding habits</a></li>
+                                                                                                    </ul>
+                                                                                </div>
+                                                            </div>
+                                                            <div class="Respiratory">
+                                                                                <div id="RespiratoryDropDown">✨ Respiratory System   ⏬</div> 
+                                                                                <div class="SubRespiratory" id="SubRespiratory">
+                                                                                                    <ul>
+                                                                                                                        <li><a href="/VBL/R1.html" class="R1">Introduction</a></li>
+                                                                                                                        <li><a href="/VBL/R2.html" class="R2">Phases of respiration</a></li>
+                                                                                                                        <li><a href="/VBL/R5.html"class="R5">Conditions necessary for respiration</a></li>
+                                                                                                                        <li><a href="/VBL/R3.html" class="R3">Types of respiratory systems</a></li>
+                                                                                                                        <li><a href="/VBL/R6.html" class="R6">Characteristics of respiratory systems</a></li>
+                                                                                                                        <li><a href="/VBL/R4.html" class="R4">Mechanism of respiration in different organisms</a></li>
+                                                                                                    </ul>
+                                                                                </div>
+                                                            </div>
+                                                            <div class="Files">
+                                                                                📂 Files
+                                                            </div>
+                                                            <a href="/VBL/About.html" class="About">
+                                                                                About VBI
+                                                            </a>
+                                        </div>
+                                        <div class="SideThird">
+                                                            <div class="User">
+                                                                                <img src="./Tonyy.JPG" id="UserImg" alt="" >
+                                                                                <div id="LoggedUser"></div>
+                                                            </div>
+                                                            <div class="Btn" id="LogOut">Log Out</div>
+                                        </div>
+                    </div>
+                                        <div class="MainView">
+                                                                                                    <div class="Video">
+                                                                                                                        <video controls>
+                                                                                                                                            <source src="./Types of respiratory system.mp4" type="video/mp4">
+                                                                                                                        </video>
+                                                                                                    </div>
+                                                                                                    <div class="Text">
+                                                                                                                        <h2>Types of respiratory systems</h3>
+                                                                                                                        <p>
+                                                                                                                                            Respiratory system includes all the structure and organs of living organisms associated with the process of taking oxygen into the body and giving out carbon dioxide and water vapour into the environment. Organisms adopt different types of respiratory systems depending on their types, complexity, size, and the habitat in which they are found. Different organisms and their respiratory systems include: 
+                                                                                                                         </p>
+                                                                                                                        
+                                                                                                                                            <ul>
+                                                                                                                                                                <li>Unicellular Organisms, E.G Amoeba And Paramecium ____ Body Surface.</li>
+                                                                                                                                                                <li>Hydra And Tapeworm_____ Cell Membrane</li>
+                                                                                                                                                                <li>Earthworm _____________  Wet skin or body</li>
+                                                                                                                                                                <li>Fishes, e.g. Tilapia _______  Gills</li>
+                                                                                                                                                                <li>Reptiles, e.g. Lizard______  Lungs</li>
+                                                                                                                                                                <li>Amphibians, e.g. toads and frogs___ Mouth, skin and lungs</li>
+                                                                                                                                                                <li>Aves, e.g. birds _________  Lungs</li>
+                                                                                                                                                                <li>Mammals _____________  Lungs</li>
+                                                                                                                                                                <li>Flowering plants ________ stomata and lenticels</li>
+                                                                                                                                             </ul>
+                                                                                                                       
+                                                                                                                        <div class="Buttons">
+                                                                                                                                            <div class="Btn1" id="Back"><< Back </div>
+                                                                                                                                            <div class="Btn1" id="Next">Next >></div>
+                                                                                                                        </div>
+                                                                                                    </div>                                                            
+                                        </div>
+                   </div>
+                   <script src="./Index.js"></script>
+                   <script>
+                    const Back = document.getElementById("Back");
+                    const Next = document.getElementById("Next");
+
+                    Back.addEventListener("click", ()=>{
+                                        window.location.href = "/VBL/R5.html"              
+                          })
+
+                    Next.addEventListener("click", ()=>{
+                                        window.location.href = "/VBL/R6.html" 
+                    })
+                   </script>
+</body>
+</html>
