@@ -12,11 +12,9 @@ body{
 }
 
 .MainContainer{
-                    margin-top: 5%;
                     background-image: linear-gradient(to bottom right, gray, white, blue);
                     width: 30%;
-                    /* transform: translate(50%, 20%); */
-                    height: 50%;
+                    height: fit-content;
                     padding: 2%;
                     display:flex;
                     flex-direction: column;
@@ -25,6 +23,7 @@ body{
                     box-shadow: 1px 0px 1px 0px black;
                     border-radius: 1em;
                     align-items: center;
+                    align-self:center;
 }
 
 .Btn{
