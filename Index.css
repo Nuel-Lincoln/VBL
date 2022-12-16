@@ -1,0 +1,248 @@
+body{
+                    margin: 0;
+                    font-family: Georgia;
+}
+
+.MainContainer{
+                    width:100vw;
+                    height:100vh;
+                    display:flex;
+                    flex-direction:column;
+                    align-items:center;
+                    font-family: Georgia;
+                   /* background-image: url("./grungy-gray-marble-textured-background.jpg"); */
+                   background-image: linear-gradient(to bottom right,#007bE7,gainsboro,#b3bfc3, #007bE7);
+}
+.Btn{
+                    box-shadow: 1px solid white;
+                    color: blue;
+                    text-align: center;
+                    padding: 1.5%;
+                    background-color: white;
+                    border-radius:.5em;
+                    /* margin-top: -1em; */
+                    text-decoration: none;
+                    font-weight: 800;
+                    cursor: pointer;
+                    font-size: 90%;
+                    text-align:center;  
+}
+ a.Btn{
+                    box-shadow: 1px solid white;
+                    color: blue;
+                    
+                    padding: 1.5%;
+                    background-color: white;
+                    border-radius:.5em;
+                    /* margin-top: -1em; */
+                    text-decoration: none;
+                    font-weight: 800;
+                    cursor: pointer;
+                    text-decoration: none;
+                    font-size: 90%;
+                    text-align:center;
+}
+
+a.MainBtn{
+                    box-shadow: 1px solid white;
+                    color: white;
+                    padding: 2%;
+                    background-color: #007bE7;
+                    border-radius:.5em;
+                    font-family: "Bradley Hand";
+                    text-decoration: none;
+                    font-weight: 800;
+                    cursor: pointer;
+                    text-decoration: none;
+                    font-size: 110%;
+                    text-align:center;
+}
+.Top{
+                    width:95%;
+                    height: 60vh;
+                    display:flex;
+                    flex-direction:column;
+                    gap:2em;
+                    justify-content:center;
+                    align-items:center;
+                    padding: 2%;
+                    font-family: Georgia;
+                    /* background-color: black; */
+}
+.Bottom{
+                    width:100%;
+                    height: 35vh;
+                    display:flex;
+                    flex-wrap: wrap;
+                    font-family: Helvetica;
+                    /* background-color: black; */
+}
+.Browse{
+                    background-color:   #007bE7;
+                    color:white;
+                    font-weight: 800;
+                    border-radius: .5em;
+                    padding: 2%;
+                    width: 40%;
+                    cursor: pointer;
+                    text-align: center;
+                    text-decoration: none;
+                    font-size: 100%;
+}
+
+.Talk{
+                    font-weight: 700;
+                    color: blue;
+                    font-size: 110%;
+                    font-family: "Footlight Mt";
+}
+.Supervisors{
+                    width:50%;
+                    height: 100%;
+                    background-color: #b3bfc3;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: space-around;
+                    font-size: 100%;
+                    font-weight: 900;
+                    font-family: Baskerville;
+                    font-family: Georgia;
+                    /* background: transparent; */
+} 
+.Description {
+                    width:50%;
+                    height: 100%;
+                    background-color:   #007bE7;
+                    display:flex;
+                    flex-direction: column;
+                    align-items:center;
+                    justify-content: flex-start;
+                    text-align:center;
+                    color: white;
+                    font-weight: 600;
+                    font-family: Georgia;
+}
+.First{
+                    display: flex;
+                    flex-direction:row;
+                    justify-content: space-between;
+                    align-items:center;
+                    width: 90%;
+                    height: 20%;
+                    /* background-color: aquamarine; */
+}
+.Two{
+                    display: flex;
+                    flex-direction: row;
+                    width:62%;
+                    align-items: center;
+                    justify-content: space-between;
+                    /* background-color: #717070; */
+                    
+}
+.Two div{
+                    font-size:120%;
+}
+.One{
+                    color: white;
+                    font-weight:800;
+                   font-family: "Elephant";
+                    font-size: 115%;
+                    /* background-color: #b3bfc3; */
+                    width: 38%;
+                    
+}
+
+.Second{
+                    display: flex;
+                    flex-direction:row;
+                    flex-wrap: wrap;
+                    width: 90%;
+                    justify-content: space-between;
+                    /* background-color: rgb(43, 59, 54); */
+                    height: 70%;
+                    /* padding: 2%; */
+}
+
+.Second1{
+                    width:30%;          
+                    /* background-color:beige   ; */
+}
+
+.Second2{
+                    width: 62%;
+                    height:100%;
+                    display: flex;
+                    flex-direction:column;
+                    align-items:center;
+                    justify-content: center;
+                    gap: 0;
+                    /* margin-left: 10.5%; */
+                    /* background-color: aqua; */
+}
+.Second2 div{
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    align-items:flex-start;
+                    justify-content: center;
+                   
+                    /* background-color: aliceblue; */
+}
+.Second2 img{
+                    width: 80%;
+                    height: 80%;
+                    border-radius: 2em;
+}
+
+.Second .Two{
+                    font-weight: 800;
+                    color: rgb(26, 24, 24);
+                    font-size: 100%;
+}
+
+.SOne, .STwo{
+                    display:flex;
+                    flex-direction:column;
+                    width:30%;
+                    height:5em;
+                    padding: 1%;
+                    background-image: linear-gradient(to bottom right,gainsboro, wheat, white);
+                    border-radius:1em;
+                    align-items: center;
+                    font-weight: 600;
+
+}
+.SOne p, .STwo p{
+                    color: #007bE7;
+}
+                   
+
+.STwo img, .SOne img{
+                    display: flex;
+                    width:20%;
+                    border-radius: 40%;
+                    margin-top: -18%;
+                    align-self: center;
+}
+
+.SOne h3, .STwo h3{
+                    color: #007bE7;
+                    font-weight: 800;
+                    font-size: 150%;
+}
+
+
+.Show1{
+                    width:20%;
+                    display:none;
+                    text-align: center;
+                    text-emphasis: justify;
+                    background-image: linear-gradient(to bottom right,white,#007bE7 , white, blue);
+                    position: absolute;
+                    top:15%;
+                    left:44%;
+                    padding: 2%;
+                    border-radius: 2em;
+}
